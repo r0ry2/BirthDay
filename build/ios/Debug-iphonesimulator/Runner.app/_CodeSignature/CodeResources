@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		JVR6wIBjqRyrgxiK3bd1S6CjzBE=
+		Usdq8FFivhQ/YCjgBY/KCm2cEZc=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,15 +54,15 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		rV5bouSgMXTrPQEWEgRDXZgykoU=
+		K2rRoil9QRp1CIRCZY6uePq+VYw=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
-		6VNihILbreYaSLk0ufhsHi0FrQA=
+		dFfqB4xulFuFF62YqF2bCs7fElk=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		1Xmu/4X0QRCn28qKIvngTuMm7/s=
+		KnPKOS9lkeIeXaVLmFzrPkRMv20=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -80,6 +80,26 @@
 		<data>
 		b8v2fHMmVZEYKPUHBHlNTb/reLI=
 		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/decor.png</key>
+		<data>
+		0qU77A0tWpEavJ4niB8r417enpo=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/food.png</key>
+		<data>
+		amQu8PHpENM4NGK7gxH/uw9s8Xg=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/guests.png</key>
+		<data>
+		uvURWp9V7SVUzjw/zAvLSjVi2RU=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/music.png</key>
+		<data>
+		rZ4xftoKaj9WFdICM7vnjY47eFY=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/plus.png</key>
+		<data>
+		wM39bqT6Cz65+z4VJSkwYSBL5rY=
+		</data>
 		<key>Frameworks/App.framework/flutter_assets/fonts/PlaywriteAUSA-VariableFont_wght.ttf</key>
 		<data>
 		nFSLa69HErsNpoS1mGcM13vAOW8=
@@ -90,7 +110,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		kZw/M1ZpICVuuNyMSS+XmMd5XNM=
+		OUJexI/DHI0P/FBJk4kMPXFUmqE=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -321,7 +341,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UocMnhC7nfL2Dao710raoBeLUzXweeTTeDGkmwTvxLw=
+			Qe5y8IMvELgMbTsRd+VkDrqQkg+I4ts90NfptG0OHts=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -335,21 +355,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PlE0lTgTxe5SuLk6+m92GSn7U92AFSIOCH2Hyk6K6pw=
+			VEDseyKF4SfO/WMl3QiZhY48ZGoYv/AHxofuEV4xeSE=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qe6b+VZ/XdLBQ6L3ENOLM7I9Y+pwFF0lkACtixm4Lis=
+			wnUh2rvsXB7Ym/vVf9+Dyr7Gml3PAn6gTcJp0I73ynw=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rm9XZ+XkXh9Mw7s5jQfN/qjed8QRo218vMEBFZ3r3qQ=
+			iveZNwGoi323trk9JjPeLehk6rgC5VTVNiMT+Rm+/mA=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -380,6 +400,41 @@
 			IRZMMjMJD00uJ9zIC9d5ujX8opvC7H12bYw7Cf4DjZ4=
 			</data>
 		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/decor.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oMDAx0m6vsFsGh/Gn0g7qb8HilnS9ttdCjpZEHO3Tw4=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/food.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ibXNffInhTWSAB2WxWsVK+zukRpSbLppZNb0zVmDHzI=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/guests.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eLNfY4VMLYxyk1c+UMqP2jnFqK76dvyE4kOTbfriRnM=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/music.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4BZD+ooZi52KRFutJUvpAUGqt9fyIHVVelqmhsPyx1A=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/plus.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tBJ+gF9ku4M/l9emzF+xy5FJ7R+j7Y8yqrNtP58ANh8=
+			</data>
+		</dict>
 		<key>Frameworks/App.framework/flutter_assets/fonts/PlaywriteAUSA-VariableFont_wght.ttf</key>
 		<dict>
 			<key>hash2</key>
@@ -398,7 +453,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kVzuSuLhcTjEZ0sKgCLTonBqhCOYHU0vXzCgatI7NgM=
+			/AYqkfR4c/RCK7Xl4GlRC7SxDpTCDBQIsm5a6qCxSHc=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>

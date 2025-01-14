@@ -1,22 +1,24 @@
-# birthday
+# Birthday 🎉
 
-A new Flutter project.
+A new Flutter project for celebrating birthdays.
 
-## Getting Started
+## Getting Started 🚀
 
 This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+### Preview 📸
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+#### First Page:
+![First Page](assets/firstpage.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### Second Page:
+![Second Page](assets/secondpage.png)
 
-Image.asset('assets/first.png')
-Image.asset('assets/second.png')
+## How to Use Images in Flutter 🖼️
 
-
-# BirthDay
+1. Define your images in the `pubspec.yaml` file:
+   ```yaml
+   flutter:
+     assets:
+       - assets/firstpage.png
+       - assets/secondpage.png

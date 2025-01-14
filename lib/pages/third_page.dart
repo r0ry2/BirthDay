@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 
 
 
+
 class ThirdPage extends StatefulWidget {
   const ThirdPage({super.key});
 
   @override
-  // ignore: library_private_types_in_public_api
-  _ThirdPageState createState() => _ThirdPageState();
+  State<ThirdPage> createState() => _ThirdPageState();
 }
 
 class _ThirdPageState extends State<ThirdPage> {
-  // قائمة من المهام
+  // قائمة المهام
   List<Map<String, dynamic>> tasks = [
     {
       'task': 'Order the Birthday Cake',
@@ -23,27 +23,39 @@ class _ThirdPageState extends State<ThirdPage> {
       'task': 'Prepare the Music Playlist',
       'description': "Include fun and favorite tracks.",
       'isChecked': false,
-      'image': 'assets/music.jpg',
+      'image': 'assets/music.png',
     },
     {
       'task': 'Arrange Food and Drinks',
       'description': "Order catering or prepare a home-cooked meal.",
       'isChecked': false,
-      'image': 'assets/food.jpg',
+      'image': 'assets/food.png',
     },
     {
       'task': 'Decorate the Venue',
       'description': "Balloons, banners, and a cheerful theme.",
       'isChecked': false,
-      'image': 'assets/decor.jpg',
+      'image': 'assets/decor.png',
     },
     {
       'task': 'Confirm Guest List',
       'description': "Ensure everyone is invited and informed.",
       'isChecked': false,
-      'image': 'assets/guests.jpg',
+      'image': 'assets/guests.png',
     },
   ];
+
+  // إضافة مهمة جديدة
+  void _addTask() {
+    setState(() {
+      tasks.add({
+        'task': 'New Task',
+        'description': 'Description of the new task.',
+        'isChecked': false,
+        'image': 'assets/plus.png', // صورة افتراضية
+      });
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -57,27 +69,41 @@ class _ThirdPageState extends State<ThirdPage> {
             color: Colors.white,
           ),
         ),
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: const Color.fromARGB(115, 200, 29, 117),
       ),
-      backgroundColor: const Color.fromARGB(255, 255, 182, 193), // خلفية وردية
+      backgroundColor: const Color.fromARGB(255, 246, 123, 141), // خلفية وردية
       body: ListView.builder(
-        padding: EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16),
         itemCount: tasks.length,
         itemBuilder: (context, index) {
-          return ListTile(
-            leading: Image.asset(tasks[index]['image'], width: 50, height: 50, fit: BoxFit.cover),
-            title: Text(tasks[index]['task']),
-            subtitle: Text(tasks[index]['description']),
-            trailing: Checkbox(
-              value: tasks[index]['isChecked'],
-              onChanged: (bool? value) {
-                setState(() {
-                  tasks[index]['isChecked'] = value!;
-                });
-              },
+          return Card(
+            elevation: 3,
+            margin: const EdgeInsets.symmetric(vertical: 8),
+            child: ListTile(
+              leading: Image.asset(
+                tasks[index]['image'],
+                width: 50,
+                height: 50,
+                fit: BoxFit.cover,
+              ),
+              title: Text(tasks[index]['task']),
+              subtitle: Text(tasks[index]['description']),
+              trailing: Checkbox(
+                value: tasks[index]['isChecked'],
+                onChanged: (bool? value) {
+                  setState(() {
+                    tasks[index]['isChecked'] = value!;
+                  });
+                },
+              ),
             ),
           );
         },
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _addTask,
+        backgroundColor: const Color.fromARGB(115, 200, 29, 117),
+        child: const Icon(Icons.add, color: Colors.white),
       ),
     );
   }

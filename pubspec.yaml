@@ -22,7 +22,13 @@ flutter:
   assets:
     - assets/balloons_image.png
     - assets/birthdaycake.png
-   
+    - assets/music.png
+    - assets/food.png
+    - assets/decor.png
+    - assets/guests.png
+    - assets/plus.png
+    - assets/firstpage.png
+    - assets/secondpage.png
   
   fonts:
     - family: PlaywriteAUS
