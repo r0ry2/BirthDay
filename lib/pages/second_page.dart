@@ -11,7 +11,7 @@ class SecondPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "hello Birthday Message",
+          "Birthday Message",
           style: TextStyle(
             fontSize: 30,
             fontWeight: FontWeight.bold,
