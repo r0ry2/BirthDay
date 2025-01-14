@@ -128,7 +128,7 @@ class FirstPage extends StatelessWidget {
               child: Text(
                 "Go to Birthday Message",
                 style: TextStyle(fontSize: 20, color: Colors.white),
-              ),
+              ), 
             ),
           ],
         ),
