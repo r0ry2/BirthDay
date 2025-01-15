@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 
 
 
+
+
+import 'package:audioplayers/audioplayers.dart'; // إضافة حزمة الصوت
+
 class ThirdPage extends StatefulWidget {
   const ThirdPage({super.key});
 
@@ -11,6 +15,9 @@ class ThirdPage extends StatefulWidget {
 }
 
 class _ThirdPageState extends State<ThirdPage> {
+  // إضافة مشغل الصوت
+  final AudioPlayer _audioPlayer = AudioPlayer();
+
   // قائمة المهام
   List<Map<String, dynamic>> tasks = [
     {
@@ -43,6 +50,13 @@ class _ThirdPageState extends State<ThirdPage> {
       'isChecked': false,
       'image': 'assets/guests.png',
     },
+    // إضافة عنصر جديد يحتوي على الصورة، النص، وزر التشغيل
+    {
+      'task': 'Play Music',
+      'description': 'Click the button to play your favorite music.',
+      'isChecked': false,
+      'image': 'assets/music_icon.png', // إضافة صورة جديدة
+    },
   ];
 
   // إضافة مهمة جديدة
@@ -55,6 +69,11 @@ class _ThirdPageState extends State<ThirdPage> {
         'image': 'assets/plus.png', // صورة افتراضية
       });
     });
+  }
+
+  // تشغيل الصوت عند الضغط على الزر
+  void _playMusic() async {
+    await _audioPlayer.play('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'); // رابط صوتي تجريبي
   }
 
   @override
@@ -88,14 +107,23 @@ class _ThirdPageState extends State<ThirdPage> {
               ),
               title: Text(tasks[index]['task']),
               subtitle: Text(tasks[index]['description']),
-              trailing: Checkbox(
-                value: tasks[index]['isChecked'],
-                onChanged: (bool? value) {
-                  setState(() {
-                    tasks[index]['isChecked'] = value!;
-                  });
-                },
-              ),
+              trailing: tasks[index]['task'] == 'Play Music'
+    ? IconButton(
+        icon: Image.asset(
+          'assets/music_icon.png', // مسار الصورة التي تريد استخدامها
+          width: 30,
+          height: 30,
+        ),
+        onPressed: _playMusic, // وظيفة تشغيل الصوت عند الضغط
+      )
+    : Checkbox(
+        value: tasks[index]['isChecked'],
+        onChanged: (bool? value) {
+          setState(() {
+            tasks[index]['isChecked'] = value!;
+          });
+        },
+      ),
             ),
           );
         },

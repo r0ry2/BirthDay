@@ -19,6 +19,7 @@ dev_dependencies:
   flutter_lints: ^5.0.0  # الحزمة تدعم Null Safety
 
 flutter:
+  flutter:
   assets:
     - assets/balloons_image.png
     - assets/birthdaycake.png
@@ -29,6 +30,12 @@ flutter:
     - assets/plus.png
     - assets/firstpage.png
     - assets/secondpage.png
+    - assets/music_icon.png
+    - assets/sounds/Happy_Birthday_Song.mp3
+
+    
+    # أضف باقي الملفات هنا
+
   
   fonts:
     - family: PlaywriteAUS
