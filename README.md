@@ -16,6 +16,9 @@ This project is a starting point for a Flutter application.
 
 ![third Page](assets/thirdpage.png)
 
+![third Page](assets/thirdpage2.png)
+
+
 ## How to Use Images in Flutter 🖼️
 
 1. Define your images in the `pubspec.yaml` file:
@@ -25,4 +28,5 @@ This project is a starting point for a Flutter application.
        - assets/firstpage.png
        - assets/secondpage.png
        - assets/thirdpage.png
+       - assets/thirdpage2.png
 
