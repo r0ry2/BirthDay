@@ -22,3 +22,5 @@ This project is a starting point for a Flutter application.
      assets:
        - assets/firstpage.png
        - assets/secondpage.png
+       - assets/thirdpage.png
+

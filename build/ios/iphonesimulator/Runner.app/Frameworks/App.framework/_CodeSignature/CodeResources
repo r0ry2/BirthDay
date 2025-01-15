@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		dFfqB4xulFuFF62YqF2bCs7fElk=
+		dF3OeLonBTYKHgbPyLrQKRfhQec=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		KnPKOS9lkeIeXaVLmFzrPkRMv20=
+		Qme5pcEiRd+UFZ5EkFfHtebKklk=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -36,6 +36,10 @@
 		<data>
 		0qU77A0tWpEavJ4niB8r417enpo=
 		</data>
+		<key>flutter_assets/assets/firstpage.png</key>
+		<data>
+		ag1hdsieDxpyQzCMcK8mbk6t/Ho=
+		</data>
 		<key>flutter_assets/assets/food.png</key>
 		<data>
 		amQu8PHpENM4NGK7gxH/uw9s8Xg=
@@ -52,6 +56,10 @@
 		<data>
 		wM39bqT6Cz65+z4VJSkwYSBL5rY=
 		</data>
+		<key>flutter_assets/assets/secondpage.png</key>
+		<data>
+		TB4qsr2oBPtg1xtgwb29+TJCiLM=
+		</data>
 		<key>flutter_assets/fonts/PlaywriteAUSA-VariableFont_wght.ttf</key>
 		<data>
 		nFSLa69HErsNpoS1mGcM13vAOW8=
@@ -62,7 +70,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		OUJexI/DHI0P/FBJk4kMPXFUmqE=
+		nCXUEg5Ha0wYrmhG4azvrfLca30=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -83,14 +91,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wnUh2rvsXB7Ym/vVf9+Dyr7Gml3PAn6gTcJp0I73ynw=
+			BBB9lf9RHJhR4lnHDRPbv3TcMAGuyer6W6NIUTO3piw=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iveZNwGoi323trk9JjPeLehk6rgC5VTVNiMT+Rm+/mA=
+			7Jh5OXgRmAva8GqaXnIqikhaqyqFCGeL4fB2e/MQrcQ=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -128,6 +136,13 @@
 			oMDAx0m6vsFsGh/Gn0g7qb8HilnS9ttdCjpZEHO3Tw4=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/firstpage.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Edu/k2mpWhFyToVwwL16L8csxEtqy/WJ9TQfpr23P6k=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/food.png</key>
 		<dict>
 			<key>hash2</key>
@@ -156,6 +171,13 @@
 			tBJ+gF9ku4M/l9emzF+xy5FJ7R+j7Y8yqrNtP58ANh8=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/secondpage.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fdxY/2aGu+ZCng7BG4f+im0fPGg7X6XHiWpbLVo6PYY=
+			</data>
+		</dict>
 		<key>flutter_assets/fonts/PlaywriteAUSA-VariableFont_wght.ttf</key>
 		<dict>
 			<key>hash2</key>
@@ -174,7 +196,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/AYqkfR4c/RCK7Xl4GlRC7SxDpTCDBQIsm5a6qCxSHc=
+			f/TPRIskrcyrNL0nwdDVvGWa5NpQbDhUGRKPc1tzYMY=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
