@@ -1,10 +1,4 @@
 import 'package:flutter/material.dart';
-
-
-
-
-
-
 import 'package:audioplayers/audioplayers.dart'; // إضافة حزمة الصوت
 
 class ThirdPage extends StatefulWidget {
@@ -50,13 +44,20 @@ class _ThirdPageState extends State<ThirdPage> {
       'isChecked': false,
       'image': 'assets/guests.png',
     },
-    // إضافة عنصر جديد يحتوي على الصورة، النص، وزر التشغيل
-    {
-      'task': 'Play Music',
-      'description': 'Click the button to play your favorite music.',
-      'isChecked': false,
-      'image': 'assets/music_icon.png', // إضافة صورة جديدة
-    },
+    // إضافة عناصر جديدة تحتوي على الصورة، النص، وزر التشغيل لكل أغنية
+    ...List.generate(2, (index) {
+      return {
+        'task': 'Play Song ${index + 1}',
+        'description': 'Click the button to play your favorite song.',
+        'isChecked': false,
+        'image': 'assets/music_icon.png', // صورة لكل أغنية
+        // روابط الأغاني الفريدة
+        'songUrl': index == 0
+            ? 'https://drive.google.com/uc?export=download&id=1wKcCd5WEKa3gBo29v_YOpz-PLKtw7XAq'
+            : 'https://drive.google.com/uc?export=download&id=1w_8y-3nUAWsPdJ3nm4-DKm5ac0SrldDx',
+        'isPlaying': false, // حالة تشغيل الأغنية
+      };
+    }),
   ];
 
   // إضافة مهمة جديدة
@@ -72,8 +73,22 @@ class _ThirdPageState extends State<ThirdPage> {
   }
 
   // تشغيل الصوت عند الضغط على الزر
-  void _playMusic() async {
-    await _audioPlayer.play('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'); // رابط صوتي تجريبي
+  void _playMusic(int index) async {
+    // التحقق إذا كان الصوت قيد التشغيل
+    if (!tasks[index]['isPlaying']) {
+      await _audioPlayer.play(tasks[index]['songUrl']);
+      setState(() {
+        tasks[index]['isPlaying'] = true; // تغيير حالة التشغيل للأغنية
+      });
+    }
+  }
+
+  // إيقاف الصوت
+  void _stopMusic(int index) async {
+    await _audioPlayer.stop();
+    setState(() {
+      tasks[index]['isPlaying'] = false; // تغيير حالة الأغنية إلى متوقفة
+    });
   }
 
   @override
@@ -107,23 +122,47 @@ class _ThirdPageState extends State<ThirdPage> {
               ),
               title: Text(tasks[index]['task']),
               subtitle: Text(tasks[index]['description']),
-              trailing: tasks[index]['task'] == 'Play Music'
-    ? IconButton(
-        icon: Image.asset(
-          'assets/music_icon.png', // مسار الصورة التي تريد استخدامها
-          width: 30,
-          height: 30,
-        ),
-        onPressed: _playMusic, // وظيفة تشغيل الصوت عند الضغط
-      )
-    : Checkbox(
-        value: tasks[index]['isChecked'],
-        onChanged: (bool? value) {
-          setState(() {
-            tasks[index]['isChecked'] = value!;
-          });
-        },
-      ),
+              trailing: tasks[index]['task'].contains('Play Song')
+                  ? Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        GestureDetector(
+                          onTap: tasks[index]['isPlaying']
+                              ? null
+                              : () => _playMusic(index), // تشغيل الصوت إذا لم يكن قيد التشغيل
+                          child: Opacity(
+                            opacity: tasks[index]['isPlaying'] ? 0.5 : 1.0, // تقليل شفافية الزر إذا كان معطلاً
+                            child: Image.asset(
+                              'assets/play_icon.png', // صورة تشغيل الصوت
+                              width: 30,
+                              height: 30,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: 8), // مسافة صغيرة بين الصور
+                        GestureDetector(
+                          onTap: !tasks[index]['isPlaying']
+                              ? null
+                              : () => _stopMusic(index), // إيقاف الصوت إذا كان قيد التشغيل
+                          child: Opacity(
+                            opacity: !tasks[index]['isPlaying'] ? 0.5 : 1.0, // تقليل شفافية الزر إذا كان معطلاً
+                            child: Image.asset(
+                              'assets/stop_icon.png', // صورة إيقاف الصوت
+                              width: 30,
+                              height: 30,
+                            ),
+                          ),
+                        ),
+                      ],
+                    )
+                  : Checkbox(
+                      value: tasks[index]['isChecked'],
+                      onChanged: (bool? value) {
+                        setState(() {
+                          tasks[index]['isChecked'] = value!;
+                        });
+                      },
+                    ),
             ),
           );
         },
