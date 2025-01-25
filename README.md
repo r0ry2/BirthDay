@@ -9,18 +9,17 @@ This project is a starting point for a Flutter application.
 ### Preview 📸
 
 #### First Page:
-![First Page](assets/firstpage.png)
+<img src="assets/firstpage.png" width="200" height="200" />
 
 #### Second Page:
-![Second Page](assets/secondpage.png)
+<img src="assets/secondpage.png" width="200" height="200" />
 
-![third Page](assets/thirdpage.png)
+#### Third Page:
+<img src="assets/thirdpage.png" width="200" height="200" />
+<img src="assets/thirdpage2.png" width="200" height="200" />
+<img src="assets/thirdpage3.png" width="200" height="200" />
+<img src="assets/thirdpage4.png" width="200" height="200" />
 
-![third Page](assets/thirdpage2.png)
-
-![third Page](assets/thirdpage3.png)
-
-![third Page](assets/thirdpage4.png)
 
 
 
