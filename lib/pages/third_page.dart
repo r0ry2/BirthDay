@@ -46,7 +46,7 @@ class _ThirdPageState extends State<ThirdPage> {
     },
     // إضافة عناصر جديدة تحتوي على الصورة، النص، وزر التشغيل لكل أغنية
    // إضافة 12 أغنية مختلفة
-...List.generate(12, (index) {
+...List.generate(15, (index) {
   return {
     'task': 'Play Song ${index + 1}', // عنوان الأغنية
     'description': 'Click the button to play your favorite song.', // وصف الأغنية
@@ -57,6 +57,9 @@ class _ThirdPageState extends State<ThirdPage> {
           'https://drive.google.com/uc?export=download&id=1wKcCd5WEKa3gBo29v_YOpz-PLKtw7XAq',
           'https://drive.google.com/uc?export=download&id=1w_8y-3nUAWsPdJ3nm4-DKm5ac0SrldDx',
           'https://drive.google.com/uc?export=download&id=1eQom_4Jlbpa2Nrzwf6MdvKbARwFZfixZ',
+          'https://drive.google.com/uc?export=download&id=1wKcCd5WEKa3gBo29v_YOpz-PLKtw7XAq',
+          'https://drive.google.com/uc?export=download&id=1wKcCd5WEKa3gBo29v_YOpz-PLKtw7XAq',
+          'https://drive.google.com/uc?export=download&id=1wKcCd5WEKa3gBo29v_YOpz-PLKtw7XAq',
           'https://drive.google.com/uc?export=download&id=1wKcCd5WEKa3gBo29v_YOpz-PLKtw7XAq',
           'https://drive.google.com/uc?export=download&id=1wKcCd5WEKa3gBo29v_YOpz-PLKtw7XAq',
           'https://drive.google.com/uc?export=download&id=1wKcCd5WEKa3gBo29v_YOpz-PLKtw7XAq',
