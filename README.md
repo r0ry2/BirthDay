@@ -15,10 +15,10 @@ This project is a starting point for a Flutter application.
 <img src="assets/secondpage.png" width="200" height="200" />
 
 #### Third Page:
-<img src="assets/thirdpage.png" width="200" height="200" />
-<img src="assets/thirdpage2.png" width="200" height="200" />
-<img src="assets/thirdpage3.png" width="200" height="200" />
-<img src="assets/thirdpage4.png" width="200" height="200" />
+<img src="assets/thirdpage.png" width="200" height="300" />
+<img src="assets/thirdpage2.png" width="200" height="300" />
+<img src="assets/thirdpage3.png" width="200" height="300" />
+<img src="assets/thirdpage4.png" width="200" height="300" />
 
 
 
