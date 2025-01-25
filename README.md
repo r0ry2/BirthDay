@@ -9,10 +9,10 @@ This project is a starting point for a Flutter application.
 ### Preview 📸
 
 #### First Page:
-<img src="assets/firstpage.png" width="200" height="200" />
+<img src="assets/firstpage.png" width="200" height="300" />
 
 #### Second Page:
-<img src="assets/secondpage.png" width="200" height="200" />
+<img src="assets/secondpage.png" width="200" height="300" />
 
 #### Third Page:
 <img src="assets/thirdpage.png" width="200" height="300" />
