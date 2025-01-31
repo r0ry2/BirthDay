@@ -10,8 +10,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.8
-  audioplayers: ^0.20.1  # الحزمة تدعم Null Safety
+  audioplayers: ^6.1.1
+  shared_preferences: ^2.0.15
+  flutter_local_notifications: ^18.0.1
+  timezone: ^0.10.0
+  flutter_app_badger: ^1.2.0
+  intl: ^0.18.0
+  firebase_core: ^3.10.1
+  firebase_auth: ^5.4.1    # اختر النسخة الأخيرة من pub.dev
+  cloud_firestore: ^5.5.0 
+
 
 dev_dependencies:
   flutter_test:
@@ -19,6 +27,8 @@ dev_dependencies:
   flutter_lints: ^5.0.0  # الحزمة تدعم Null Safety
 
 flutter:
+  uses-material-design: true
+
   assets:
     - assets/balloons_image.png
     - assets/birthdaycake.png
@@ -33,8 +43,8 @@ flutter:
     - assets/sounds/Happy_Birthday_Song.mp3
     - assets/play_icon.png
     - assets/stop_icon.png
+    - assets/app_icon.png
 
-  
   fonts:
     - family: PlaywriteAUS
       fonts:

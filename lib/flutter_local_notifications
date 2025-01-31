@@ -1,0 +1,44 @@
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+
+class NotificationService {
+  static final FlutterLocalNotificationsPlugin _notificationsPlugin = FlutterLocalNotificationsPlugin();
+
+  static Future<void> initialize() async {
+    const AndroidInitializationSettings androidInitializationSettings =
+        AndroidInitializationSettings('@mipmap/ic_launcher'); // تأكد من وجود أيقونة في مجلد res
+
+    final IOSInitializationSettings iosInitializationSettings = IOSInitializationSettings(
+      requestSoundPermission: true,
+      requestBadgePermission: true,
+      requestAlertPermission: true,
+    );
+
+    final InitializationSettings initializationSettings = InitializationSettings(
+      android: androidInitializationSettings,
+      iOS: iosInitializationSettings,
+    );
+
+    await _notificationsPlugin.initialize(initializationSettings);
+  }
+
+  static Future<void> requestPermissions() async {
+    await _notificationsPlugin
+        .resolvePlatformSpecificImplementation<IOSFlutterLocalNotificationsPlugin>()
+        ?.requestPermissions(alert: true, badge: true, sound: true);
+  }
+
+  static Future<void> showNotification(String title, String body) async {
+    const NotificationDetails notificationDetails = NotificationDetails(
+      android: AndroidNotificationDetails(
+        'channel_id',
+        'channel_name',
+        importance: Importance.max,
+        priority: Priority.high,
+        showWhen: true,
+      ),
+      iOS: IOSNotificationDetails(),
+    );
+
+    await _notificationsPlugin.show(0, title, body, notificationDetails);
+  }
+}

@@ -1,13 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'second_page.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+
 
 class FirstPage extends StatelessWidget {
   FirstPage({super.key});
 
   final TextEditingController nameController = TextEditingController();
+  final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+    FlutterLocalNotificationsPlugin();
+
 
   @override
   Widget build(BuildContext context) {
+    _loadSavedName();
+
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -71,6 +79,7 @@ class FirstPage extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 String name = nameController.text;
+                _saveName(name);
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => SecondPage(name: name)),
@@ -82,11 +91,25 @@ class FirstPage extends StatelessWidget {
               child: Text(
                 "Go to Birthday Message",
                 style: TextStyle(fontSize: 20, color: Colors.white),
-              ), 
+              ),
             ),
           ],
         ),
       ),
     );
   }
+
+  Future<void> _saveName(String name) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setString('username', name);
+  }
+
+  Future<void> _loadSavedName() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    String? savedName = prefs.getString('username');
+    if (savedName != null) {
+      nameController.text = savedName;
+    }
+  }
+  
 }
